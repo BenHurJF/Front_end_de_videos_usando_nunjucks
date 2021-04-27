@@ -1,0 +1,210 @@
+    @import "https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap";
+        
+    :root {
+      --color-green: #398a4d;
+      --color-free: rgba(26, 24, 24, 0.15);
+    }
+
+
+    * {
+            margin:0;
+            padding:0;
+            border:0;
+        }
+        body {
+            background: #282a36;
+            font-family: 'Source Sans Pro', sans-serif;
+            color: white;
+        }
+         
+        header {
+             padding: 32px;
+             border-bottom: 1px solid #333;
+             background: rgba(0, 0, 0, 0.1)
+        }
+
+        .links {
+              text-align: center;
+        }
+
+        .links a {
+            color: white;
+            font-size: 18px;
+            line-height: 28px;
+            margin: 0 16px;
+            text-decoration: none;
+        }
+
+        .links a:hover {
+            color: var(--color-green);
+            transition: color 700ms;
+        }
+
+    
+
+        #wrapper {
+            text-align: center;
+            padding: 25px;
+        }
+        
+        #wrapper img {
+            /* border-radius: 50%; */
+            border: 1px solid var(--color-green);;
+            margin-bottom: 34px;
+            height: 340px;
+            max-width: 550px;
+            
+        }
+
+        #wrapper h2 {
+            font-size: 42px;
+            line-height: 52px;
+            font-weight: bold;
+        }
+
+        #wrapper h3 {
+            font-size: 24px;
+            line-height: 34px;
+            font-weight: normal;
+            margin-top: 9px;
+            opacity: 0.7;
+        }
+
+        #wrapper p {
+            max-width: 500px;
+            margin: 28px auto;
+            font-size: 19px;
+            line-height: 27px;
+        }
+
+        /* #wrapper p a {
+            color: var(--color-green);
+        } */
+
+        #links-footer a {
+            border-bottom: 1px solid var(--color-green);
+        }
+
+        /* ==== CARDS === */
+
+        .cards {
+            max-width: 600px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: rgba(26, 24, 24, 0.15);
+            display: grid;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+             transform: scale(1.1);
+             transition-duration: 250ms;
+          }
+
+       
+        .card_img-container img {
+            width: 100%;
+        }
+
+        .card_content, .card_info {
+            padding: 18px;
+        }
+
+        .card_info {
+            display: grid; 
+            grid-template-columns: 1fr 1fr;
+            align-items: center;
+        }
+
+        .card_price {
+            background-color: var(--color-free);
+            filter: brightness(90%);
+            padding: 5px 20px;
+            border-radius: 20px;
+            text-align: center;
+        }
+
+        /* === Modal === */
+        .modal-overlay {
+            background-color: rgba(0, 0, 0, 0.7);
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .modal {
+            background-color: white;
+            width: 90%;
+            height: 90%;
+            margin: 5vh auto;
+            position: relative;
+        }
+
+        .modal .modal-close {
+            color: black;
+            position: absolute;
+            right: 8px;
+            top: 8px;
+            cursor: pointer;
+            
+        }
+        
+        /* === Modal.ACTIVE === */
+        .modal-overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        iframe {
+            width: 100%;
+            height: 90%;
+            position: absolute;
+            top: 5%;
+        }
+
+        /* === Featured === */
+
+        .featured-wrapper.card_img-container {
+            position: relative;
+        }
+
+        .featured {
+            background: rgb(212, 171, 116);
+            color: #001a0d;
+            padding: 1px 8px;
+            position: absolute;
+            right: 5px;
+            border-radius: 16px;
+            top: -10px;
+        }
+
+        /* == VIDEO PAGE == */
+
+        .video {
+            margin: 0 auto;
+            max-width: 650px;
+        }
+
+        .card_video-container {
+            position: relative;
+            padding-top: 62.5%;
+        }
+
+        .card_video-container iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+        }

@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Luan Kilzes - Beiu</title>
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="wrapper">
+        <img src="{{ about.img }}"
+            alt="imagem de {{ about.name }}">
+        <h2>{{ about.name }}</h2>
+        <h3>{{ about.descH3 }}</h3>
+        <p>{{ about.descP }}</p>
+    </div>
+
+    <div id="links-footer" class="links">
+        {% for link in about.links %}
+        <a href="{{ link.url }}" target="_blank"> {{ link.name }} </a>
+        {% endfor %}
+    </div>
+
+{% endblock %}
