@@ -22,7 +22,7 @@ server.get("/", function (req, res) {
         descP: "Viva intensamente todos os dias!",
         links: [
             { name: "Facebook", url: "https://www.facebook.com/beiu.jeffer/" },
-            {    name: "Instagram", url: "https://instagram.com/beiujeffer/" }
+            {    name: "Instagram", url: "https://instagram.com/beiujeffer1/" }
         ]
     }
 
