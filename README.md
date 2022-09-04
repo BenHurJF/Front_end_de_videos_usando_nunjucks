@@ -1,4 +1,4 @@
-# Pagina-de-videos-motivacao
+# Pagina-de-videos-motivation-tradying
 
 - Utilizando node + Nunjucks
 - Página inicial e Página Aulas exibindo lista de videos
