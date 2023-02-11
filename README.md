@@ -1,4 +1,10 @@
-# Pagina-de-videos-motivacao
+# Pagina-de-videos-motivation-tradying
 
-Utilizando node.js -> Nunjucks
-Page inicial e page Aulas exibindo lista de videos, ao clicar em um video é redirecionado para a rota do respectivo Video clicado.
+- Utilizando node + Nunjucks
+- Página inicial e Página Aulas exibindo lista de videos
+
+# Como usar
+- clone o projeto
+- rode 'npm install'
+- rode npm start
+- projeto vai estar disponível na porta 5000
