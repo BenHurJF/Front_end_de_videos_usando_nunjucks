@@ -7,4 +7,4 @@
 - clone o projeto
 - rode 'npm install'
 - rode npm start
-- projeto vai estar disponível na porta 5000
+- projeto vai estar disponível na url: http://localhost:5000
